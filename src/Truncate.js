@@ -82,20 +82,11 @@ export default class Truncate extends Component {
 
     // Shim innerText to consistently break lines at <br/> but not at \n
     innerText(node) {
-        const div = document.createElement('div');
-        div.innerHTML = node.innerHTML.replace(/\r\n|\r|\n/g, ' ');
+      var div = document.createElement('div');
+      div.innerHTML = node.innerHTML.replace(/\r\n|\r|\n/g, ' ');
 
-        let text = div.innerText;
-
-        const test = document.createElement('div');
-        test.innerHTML = 'foo<br/>bar';
-
-        if (test.innerText.replace(/\r\n|\r/g, '\n') !== 'foo\nbar') {
-            div.innerHTML = div.innerHTML.replace(/<br.*?[\/]?>/gi, '\n');
-            text = div.innerText;
-        }
-
-        return text;
+      var text = div.innerText;
+      return text;
     }
 
     onResize() {
@@ -261,20 +252,12 @@ export default class Truncate extends Component {
     }
 
     renderLine(line, i, arr) {
-        if (i === arr.length - 1) {
-            return <span key={i}>{line}</span>;
-        } else {
-            const br = <br key={i + 'br'} />;
-
-            if (line) {
-                return [
-                    <span key={i}>{line}</span>,
-                    br
-                ];
-            } else {
-                return br;
-            }
-        }
+      if (i === arr.length - 1) {
+          return line;
+      }
+      else {
+        return line + ' ';
+      }
     }
 
     render() {
