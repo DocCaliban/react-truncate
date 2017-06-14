@@ -5,7 +5,8 @@
   "main": "src/Truncate.js",
   "module": "src/Truncate.js",
   "files": [
-    "lib"
+    "lib",
+	"src"
   ],
   "scripts": {
     "compile": "mkdir lib; babel ./src --out-file ./lib/Truncate.js && BABEL_ENV=CommonJS babel ./src --out-file ./lib/Truncate.CommonJS.js",
