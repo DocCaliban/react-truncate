@@ -1,39 +1,60 @@
 {
-  "name": "react-truncate",
-  "version": "2.1.4",
+  "_args": [
+    [
+      {
+        "raw": "react-truncate",
+        "scope": null,
+        "escapedName": "react-truncate",
+        "name": "react-truncate",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\DEV\\mobile-website"
+    ]
+  ],
+  "_from": "react-truncate@latest",
+  "_id": "react-truncate@2.1.4",
+  "_inCache": true,
+  "_location": "/react-truncate",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-truncate-2.1.4.tgz_1494858666099_0.9407637838739902"
+  },
+  "_npmUser": {
+    "name": "pablosichert",
+    "email": "mail@pablosichert.de"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-truncate",
+    "scope": null,
+    "escapedName": "react-truncate",
+    "name": "react-truncate",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-truncate/-/react-truncate-2.1.4.tgz",
+  "_shasum": "58126a199c8afdac87873986e08210fd7305ef43",
+  "_shrinkwrap": null,
+  "_spec": "react-truncate",
+  "_where": "D:\\DEV\\mobile-website",
+  "author": {
+    "name": "Pablo Sichert",
+    "email": "kps@one.com"
+  },
+  "bugs": {
+    "url": "https://github.com/One-com/react-truncate/issues"
+  },
+  "dependencies": {},
   "description": "React component for truncating multi-line spans and adding an ellipsis",
-  "main": "lib/Truncate.CommonJS.js",
-  "module": "lib/Truncate.js",
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "compile": "mkdir lib; babel ./src --out-file ./lib/Truncate.js && BABEL_ENV=CommonJS babel ./src --out-file ./lib/Truncate.CommonJS.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov",
-    "lint": "eslint .",
-    "prepublish": "rm -rf ./lib && npm run compile",
-    "preversion": "npm run test",
-    "report-coverage": "npm run coverage | coveralls",
-    "test": "BABEL_ENV=test mocha --compilers js:babel-core/register --require babel-polyfill",
-    "travis": "npm run lint && npm run compile && npm run test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:One-com/react-truncate.git"
-  },
-  "homepage": "https://github.com/One-com/react-truncate",
-  "keywords": [
-    "react",
-    "truncate",
-    "ellipsis",
-    "multiline"
-  ],
-  "author": "Pablo Sichert <kps@one.com>",
-  "license": "ISC",
-  "peerDependencies": {
-    "prop-types": "<= 15.x.x",
-    "react": "<= 15.x.x"
-  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
@@ -54,8 +75,8 @@
     "jsdom": "^9.11.0",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
-    "raf": "^3.3.0",
     "prop-types": "^15.5.4",
+    "raf": "^3.3.0",
     "react": "^15.5.4",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
@@ -64,5 +85,56 @@
     "unexpected-dom": "^3.1.1",
     "unexpected-react": "^3.4.0",
     "unexpected-sinon": "^10.7.0"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "58126a199c8afdac87873986e08210fd7305ef43",
+    "tarball": "https://registry.npmjs.org/react-truncate/-/react-truncate-2.1.4.tgz"
+  },
+  "files": [
+    "lib"
+  ],
+  "gitHead": "77a7428e28df7f2b76772b07871802ea4d483fc0",
+  "homepage": "https://github.com/One-com/react-truncate",
+  "keywords": [
+    "react",
+    "truncate",
+    "ellipsis",
+    "multiline"
+  ],
+  "license": "ISC",
+  "main": "lib/Truncate.CommonJS.js",
+  "maintainers": [
+    {
+      "name": "gustavnikolaj",
+      "email": "gustavnikolaj@gmail.com"
+    },
+    {
+      "name": "pablosichert",
+      "email": "mail@pablosichert.de"
+    }
+  ],
+  "module": "lib/Truncate.js",
+  "name": "react-truncate",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "prop-types": "<= 15.x.x",
+    "react": "<= 15.x.x"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/One-com/react-truncate.git"
+  },
+  "scripts": {
+    "compile": "mkdir lib; babel ./src --out-file ./lib/Truncate.js && BABEL_ENV=CommonJS babel ./src --out-file ./lib/Truncate.CommonJS.js",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov",
+    "lint": "eslint .",
+    "prepublish": "rm -rf ./lib && npm run compile",
+    "preversion": "npm run test",
+    "report-coverage": "npm run coverage | coveralls",
+    "test": "BABEL_ENV=test mocha --compilers js:babel-core/register --require babel-polyfill",
+    "travis": "npm run lint && npm run compile && npm run test"
+  },
+  "version": "2.1.4"
 }
